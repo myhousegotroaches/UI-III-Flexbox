@@ -64,3 +64,33 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.top-section nav a{
+	font-size: 20px;
+	text-decoration: none;
+	color: grey;
+	margin-top: 12px;
+}
+
+nav{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.second-section{
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	margin: 5%;
+
+}
+
+.title-getstarted{
+	margin-top: 1%;
+	text-align: center;
+}
+
+.title-getstarted h1{
+	font-size: 100px;
+}
+
