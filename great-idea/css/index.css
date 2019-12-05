@@ -130,3 +130,24 @@ nav{
 	display: flex;
 	justify-content: center;
 }
+
+.bottom-of-pic{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+.services{
+	width: 30%;
+}
+
+.product{
+	width: 30%;
+}
+
+.vision{
+	width: 30%;
+}
+
