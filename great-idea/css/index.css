@@ -3,151 +3,247 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 * {
-	box-sizing:border-box;
-	padding: 0;
-	margin: 0;
-	max-width: 100%;
-	}
-
-.top-section nav a{
-	font-size: 20px;
-	text-decoration: none;
-	color: grey;
-	margin-top: 12px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
 
-nav{
-	display: flex;
-	justify-content: space-evenly;
+.top-section nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: grey;
+  margin-top: 12px;
 }
 
-.second-section{
-	display: flex;
-	justify-content: center;
-	justify-content: space-around;
-	margin: 5%;
-
+nav {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.title-getstarted{
-	margin-top: 2%;
-	text-align: center;
+.second-section {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin: 5%;
 }
 
-.title-getstarted h1{
-	font-size: 100px;
+.title-getstarted {
+  margin-top: 2%;
+  text-align: center;
 }
 
-.title-getstarted p{
-	font-size: 28px;
-	border: 2px solid black;
-	width: 50%;
-	padding: 5px;
-	margin-left: 20%
+.title-getstarted h1 {
+  font-size: 100px;
 }
 
-.top-of-pic{
-	display: flex;
-	justify-content: space-around;
-	margin-top: 15px;
-	margin-bottom: 15px;
+.title-getstarted p {
+  font-size: 28px;
+  border: 2px solid black;
+  width: 50%;
+  padding: 5px;
+  margin-left: 20%;
 }
 
-.features{
-	width: 40%;
-	font-size: 20px;
+.top-of-pic {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.about{
-	width: 40%;
-	font-size: 20px;
+.features {
+  width: 40%;
+  font-size: 20px;
 }
 
-.middle-pic{
-	display: flex;
-	justify-content: center;
+.about {
+  width: 40%;
+  font-size: 20px;
 }
 
-.bottom-of-pic{
-	display: flex;
-	justify-content: space-around;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	font-size: 20px;
+.middle-pic {
+  display: flex;
+  justify-content: center;
 }
 
-.services{
-	width: 30%;
+.bottom-of-pic {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 22px;
+  font-size: 20px;
 }
 
-.product{
-	width: 30%;
+.services {
+  width: 30%;
 }
 
-.vision{
-	width: 30%;
+.product {
+  width: 30%;
 }
 
+.vision {
+  width: 30%;
+}
+
+footer {
+  margin-top: 15px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+footer h1 {
+  font-size: 10px;
+}
