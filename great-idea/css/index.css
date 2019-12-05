@@ -65,6 +65,13 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+* {
+	box-sizing:border-box;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	}
+
 .top-section nav a{
 	font-size: 20px;
 	text-decoration: none;
@@ -86,7 +93,7 @@ nav{
 }
 
 .title-getstarted{
-	margin-top: 1%;
+	margin-top: 2%;
 	text-align: center;
 }
 
@@ -94,3 +101,32 @@ nav{
 	font-size: 100px;
 }
 
+.title-getstarted p{
+	font-size: 28px;
+	border: 2px solid black;
+	width: 50%;
+	padding: 5px;
+	margin-left: 20%
+}
+
+.top-of-pic{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.features{
+	width: 40%;
+	font-size: 20px;
+}
+
+.about{
+	width: 40%;
+	font-size: 20px;
+}
+
+.middle-pic{
+	display: flex;
+	justify-content: center;
+}
