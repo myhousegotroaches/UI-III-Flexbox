@@ -274,5 +274,17 @@ footer h1 {
 
 #main {
   display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#main div {
+  width: 70%;
+}
+
+.left-column {
+  display: flex;
   flex-direction: column;
+  margin-left: 10%;
 }
