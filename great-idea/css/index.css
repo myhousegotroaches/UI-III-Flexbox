@@ -247,3 +247,32 @@ footer {
 footer h1 {
   font-size: 10px;
 }
+
+/* Services Page CSS - S.P.*/
+
+/*  top section */
+
+.header-image-of-services-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.under-header-pic {
+  width: 70%;
+  margin-left: 20%;
+  font-size: 20px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.under-header-pic h1 {
+  font-size: 30px;
+}
+
+/* middle section, one with blocks - S.P.*/
+
+#main {
+  display: flex;
+  flex-direction: column;
+}
