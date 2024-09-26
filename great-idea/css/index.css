@@ -3,64 +3,339 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+.top-section nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: grey;
+  margin-top: 12px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.second-section {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin: 5%;
+}
+
+.title-getstarted {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.title-getstarted h1 {
+  font-size: 100px;
+}
+
+.title-getstarted p {
+  font-size: 28px;
+  border: 2px solid black;
+  width: 50%;
+  padding: 5px;
+  margin-left: 20%;
+}
+
+.top-of-pic {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.features {
+  width: 40%;
+  font-size: 20px;
+}
+
+.about {
+  width: 40%;
+  font-size: 20px;
+}
+
+.middle-pic {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-of-pic {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 22px;
+  font-size: 20px;
+}
+
+.services {
+  width: 30%;
+}
+
+.product {
+  width: 30%;
+}
+
+.vision {
+  width: 30%;
+}
+
+footer {
+  margin-top: 15px;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+footer h1 {
+  font-size: 10px;
+}
+
+/* Services Page CSS - S.P.*/
+
+/*  top section */
+
+.header-image-of-services-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.under-header-pic {
+  width: 70%;
+  margin-left: 20%;
+  font-size: 20px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.under-header-pic h1 {
+  font-size: 30px;
+}
+
+/* middle section, one with blocks - S.P.*/
+
+#main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+#main div {
+  width: 70%;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.boxes-in-main-section {
+  border: 2px solid black;
+  margin-bottom: 8%;
+  padding: 4%;
+  background-color: #d0c8cd;
+}
+
+.learn-button {
+  border: 1px solid black;
+  padding: 2%;
+  text-align: center;
+  width: 40%;
+  margin: 4%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.boxes-in-main-section h2 {
+  font-size: 20px;
+}
+
+.boxes-in-main-section p {
+  font-size: 20px;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+.bottom-try {
+  display: flex;
+  margin-top: 2%;
+  margin-bottom: 6%;
+}
+
+.bottom-text {
+  width: 50%;
+  margin-left: 10%;
+  font-size: 20px;
+}
+
+.final-picture {
+  margin-left: 2%;
+}
+
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
